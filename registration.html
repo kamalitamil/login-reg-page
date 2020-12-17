@@ -1,0 +1,47 @@
+<!--
+	This page creates a form for the user to register
+	entering their name, email, password. 
+	a button to submit to registration.php
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>REGISTRATION</title>
+<meta http-equiv="Content-Type" content="text/html"; charset=utf-8" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <style>
+     body{
+       background-image: url("bg1.jpg");
+	 }
+	 .col-xs-4{
+		 font-size: 40px;
+		 color:green ;
+   }
+   h1{
+     color: rgb(21, 100, 21);
+     font-size: 40px;
+   }
+  </style>
+<h1> REGISTRATION </h1>
+</head>
+<body>
+<div class="container">
+  <form method="POST" action="registration.php">
+    <div class="form-group row">
+      <div class="col-xs-4">
+	  Name: 
+        <input class="form-control" required type="text" name="name">
+		Email: 
+        <input class="form-control"  required type="email" name="email">
+		Password:
+        <input class="form-control" required type="password" name="password"> <br>
+		
+		<input type="submit" value="Sign up" name="submit" class="btn btn-success btn-lg"></input>
+		</form>
+      </div>
+    </div>
+  </form>
+</div>
+</body>
+</html>
